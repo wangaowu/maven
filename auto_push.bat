@@ -12,11 +12,6 @@ git status
 @echo.
 @echo $ git add .
 @echo.
-set /p a= $ git commit -m 
-if "%a%"=="" (
-    @echo 输入不可为空，请重新输入说明信息！！！
-    goto 1
-)
 
 Chcp 65001>nul
 git status
@@ -29,7 +24,7 @@ echo $ git push origin release
 
 ::这里写git的命令
 git add .
-git commit -m %a%
+git commit -m "无需回退,仅托管文件"
 git push
 ::这里写git的命令
 
