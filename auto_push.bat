@@ -1,6 +1,6 @@
 @echo off
 cls
-@title git一键执行push操作
+@title git_auto_push
 
 :1
 cls
